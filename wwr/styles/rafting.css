@@ -55,12 +55,10 @@ nav a{
 }
 
 article{
-    position:absolute;
-    bottom:30px;
-    left:30px;
-    right:30px;
-    background:rgba(255,255,255,.8);
-    padding:20px;
+    position: static;
+    background: rgba(255, 255, 255, .8);
+    padding: 20px;
+    text-align: center;
 }
 
 article img{
@@ -74,7 +72,7 @@ article p{
 }
 
 section{
-    margin:40px 20px;
+    margin: 30px 20px;
     padding:20px;
     text-align:center;
 }
@@ -90,10 +88,7 @@ footer{
     width:40px;
     margin-left:10px;
 }
-.socialmedia img{
-    width:40px;
-    margin-left:10px;
-}
+
 
 /* Adventure Gallery */
 section:last-of-type {
