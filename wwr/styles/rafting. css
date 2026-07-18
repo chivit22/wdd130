@@ -1,0 +1,184 @@
+[7/15/2026 9:49 AM] Chivt: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about White Water Rafting Adventures.">
+    <meta name="author" content="Solomon Chibuzor">
+    <title>About Us | White Water Rafting</title>
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+<header>
+
+<img src="images/logo.png" alt="Rafting Logo">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="trips.html">Trips</a>
+<a href="contact.html">Contact Us</a>
+</nav>
+
+</header>
+
+<main>
+
+<div class="hero">
+
+<img src="images/hero.jpg" alt="Rafting Adventure">
+
+<h1>White Water Rafting</h1>
+
+<article>
+
+<img src="images/employee.jpg" alt="Happy Customer">
+
+<p>
+Our mission is to provide unforgettable rafting adventures while
+keeping every guest safe. We believe in teamwork, excitement,
+and creating memories that last a lifetime.
+</p>
+
+</article>
+
+</div>
+
+<section>
+
+<h2>History</h2>
+
+<p>
+White Water Rafting was founded by adventure lovers who wanted to
+share the beauty of nature through exciting rafting experiences.
+Today we welcome visitors from around the world.
+</p>
+
+</section>
+
+<section>
+
+<h2>Adventure Awaits You!</h2>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+©2026 White Water Rafting | Solomon Chibuzor
+</p>
+
+<nav class="socialmedia">
+
+<a href="https://facebook.com">
+<img src="images/facebook.png" alt="Facebook">
+</a>
+
+<a href="https://instagram.com">
+<img src="images/instagram.png" alt="Instagram">
+</a>
+
+<a href="https://linkedin.com">
+<img src="images/linkedin.png" alt="LinkedIn">
+</a>
+
+</nav>
+
+</footer>
+
+</body>
+</html>
+[7/15/2026 9:54 AM] Chivt: *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    border-bottom:1px solid #ccc;
+}
+
+header img{
+    width:100px;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#003366;
+    font-weight:bold;
+}
+
+.hero{
+    position:relative;
+}
+
+.hero img{
+    width:100%;
+    display:block;
+}
+
+.hero h1{
+    position:absolute;
+    top:20px;
+    width:100%;
+    text-align:center;
+    color:white;
+    background:rgba(0,0,0,.5);
+    padding:15px;
+}
+
+article{
+    position:absolute;
+    bottom:30px;
+    left:30px;
+    right:30px;
+    background:rgba(255,255,255,.8);
+    padding:20px;
+}
+
+article img{
+    width:150px;
+    float:right;
+    margin-left:20px;
+}
+
+article p{
+    line-height:1.6;
+}
+
+section{
+    margin:40px 20px;
+    text-align:center;
+}
+
+footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.socialmedia img{
+    width:40px;
+    margin-left:10px;
+}
