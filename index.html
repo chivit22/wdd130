@@ -8,6 +8,74 @@
     <meta name="author" content="Solomon Chibuzor">
 
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="rafting.css">
+    <style>
+        :root {
+  --primary: #055a05;
+  --secondary: #f4a261;
+  --accent-1-color: #264653;
+  --accent-2-color: #e9c46a;
+  --heading-font: "Times New Roman", Georgia, serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent-1-color);
+  margin: 0;
+}
+
+header, main, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero > img {
+  width: 100%;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(38, 70, 83, 0.75);
+  color: white;
+  padding: 0.8rem 1.2rem;
+}
+
+.hero article {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  position: relative;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 1rem;
+}
+
+.socialmedia a img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary);
+}
+    </style>
 </head>
 <body> 
     <header> 

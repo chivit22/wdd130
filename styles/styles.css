@@ -1,17 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: #333;
     padding: 1rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
     color: #fff;
+    text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
 }
 
 main {
-    max-width: 840px;
-    margin: 0 auto;
+    padding: 1rem;
 }
 
 h1 {
@@ -36,18 +53,14 @@ aside {
     text-align: center;
 }
 
-
 aside img {
     width: 200px;
     height: auto;
 }
 
-
-
-p { padding: 0.; }
-
-
-
+p {
+    padding: 0;
+}
 
 footer {
     margin-top: 1rem;
