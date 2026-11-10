@@ -9,6 +9,12 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -18,7 +24,7 @@ html {
 
 body {
   margin: 0;
-  background: #e8e8e8;
+  background: var(--page-bg);
   font-family: Arial, Helvetica, sans-serif;
   color: var(--ink);
 }
@@ -32,12 +38,12 @@ img {
   width: min(1180px, calc(100% - 40px));
   margin: 18px auto 0;
   background: var(--panel-bg);
-  border: 1px solid #d2d2d2;
+  border: 1px solid var(--line);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02);
 }
 
 .top-band {
-  background: #e7e7e7;
+  background: var(--soft);
   padding: 18px 22px 10px;
   display: flex;
   flex-direction: column;
@@ -64,7 +70,7 @@ img {
   font-size: 1.1rem;
   line-height: 0.9;
   letter-spacing: 0.02em;
-  color: #0f0f0f;
+  color: var(--ink);
   font-weight: 700;
   position: relative;
   top: 4px;
@@ -86,7 +92,7 @@ img {
 }
 
 .side-nav a {
-  color: #1a1a1a;
+  color: var(--nav);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 700;
@@ -94,7 +100,7 @@ img {
 }
 
 .side-nav a.active {
-  color: #1d1d1d;
+  color: var(--ink);
 }
 
 .content {
@@ -126,14 +132,14 @@ img {
   margin: 0;
   font-weight: 700;
   line-height: 1.1;
-  color: #1d1d1d;
+  color: var(--ink);
 }
 
 .title-rule {
   display: inline-block;
   flex: 1;
   height: 2px;
-  background: #7a7a7a;
+  background: var(--line);
   opacity: 0.7;
   margin-top: 8px;
 }
@@ -150,7 +156,9 @@ img {
   width: 260px;
   height: 176px;
   object-fit: cover;
-  border: 1px solid #a6a6a6;
+  border: 1px solid var(--line);
+  float: right;
+  margin: 0 0 12px 20px;
 }
 
 .story-block p {
@@ -158,7 +166,7 @@ img {
   max-width: 820px;
   font-size: 1.02rem;
   line-height: 1.6;
-  color: #1f1f1f;
+  color: var(--muted);
 }
 
 .history-block {
@@ -178,6 +186,7 @@ img {
   max-width: 980px;
   font-size: 1.03rem;
   line-height: 1.6;
+  color: var(--muted);
 }
 
 .cta-block {
@@ -190,7 +199,7 @@ img {
   gap: 10px;
   flex-wrap: wrap;
   font-size: 1.05rem;
-  color: #2d2d2d;
+  color: var(--muted);
   margin-top: 6px;
 }
 
@@ -200,7 +209,7 @@ img {
 
 .divider {
   font-size: 1.3rem;
-  color: #4d4d4d;
+  color: var(--muted);
 }
 
 .author {
@@ -247,13 +256,13 @@ img {
 }
 
 .note-line {
-  border-top: 1px solid #b5b5b5;
+  border-top: 1px solid var(--line);
   margin-top: 14px;
   padding: 16px 18px 20px;
   font-size: 1.05rem;
   line-height: 1.5;
   font-style: italic;
-  color: #1d1d1d;
+  color: var(--ink);
   text-align: left;
 }
 
