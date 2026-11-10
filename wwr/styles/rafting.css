@@ -127,9 +127,13 @@ img {
 }
 
 .hero article {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 24px;
   background: rgba(255, 255, 255, 0.8);
   padding: 1rem;
-  position: relative;
+  z-index: 1;
 }
 
 .hero article img {
