@@ -9,7 +9,7 @@
       content="Learn about Exciting Expeditions and our mission to provide unforgettable rafting adventures."
     />
     <meta name="author" content="WDD 130 Student" />
-    <link rel="stylesheet" href="rafting.css" />
+    <link rel="stylesheet" href="styles/rafting.css" />
   </head>
   <body>
     <div class="page-shell">
@@ -33,26 +33,22 @@
       </header>
 
       <main class="content">
-        <div class="hero-image">
+        <div class="hero">
           <img src="images/hero.jpg" alt="People rafting through whitewater" />
+          <h1>Exciting Expeditions</h1>
+          <article>
+            <img
+              src="images/employee.jpg"
+              alt="Rafting guide smiling in a life jacket"
+              class="story-photo"
+            />
+            <p>
+              Here at Exciting Expeditions, our whitewater rafting trips are designed to provide
+              thrill-seekers with an unforgettable experience on the water. Our expert guides ensure
+              safety while you navigate through stunning landscapes and challenging rapids. Oars Up!
+            </p>
+          </article>
         </div>
-
-        <section class="section-heading" aria-labelledby="about-title">
-          <h1 id="about-title">About Us - Exciting Expeditions</h1>
-        </section>
-
-        <article class="story-block">
-          <img
-            src="images/employee.jpg"
-            alt="Rafting guide smiling in a life jacket"
-            class="story-photo"
-          />
-          <p>
-            Here at Exciting Expeditions, our whitewater rafting trips are designed to provide
-            thrill-seekers with an unforgettable experience on the water. Our expert guides ensure
-            safety while you navigate through stunning landscapes and challenging rapids. Oars Up!
-          </p>
-        </article>
 
         <section class="history-block" aria-labelledby="history-title">
           <h2 id="history-title">History</h2>
@@ -66,32 +62,22 @@
 
         <section class="cta-block" aria-labelledby="adventure-title">
           <h2 id="adventure-title">Adventure Awaits You!</h2>
-          <div class="copyright-line">
-            <span class="copyright">©2025✦</span>
-            <span class="brand-mark">Exciting Expeditions</span>
-            <span class="divider">✦</span>
-            <span class="author">solomon chibuzor</span>
-          </div>
         </section>
-
-        <div class="social-row" aria-label="Social media links">
-          <a href="#" class="social social-facebook" aria-label="Facebook">
-            <img src="images/facebook.png" alt="Facebook" />
-          </a>
-          <a href="#" class="social social-linkedin" aria-label="LinkedIn">
-            <img src="images/linkedin.png" alt="LinkedIn" />
-          </a>
-          <a href="#" class="social social-instagram" aria-label="Instagram">
-            <img src="images/instagram.png" alt="Instagram" />
-          </a>
-        </div>
       </main>
 
       <footer>
-        <div class="note-line">
-          Note that this is just an example of the page rendered in the browser<br />
-          with HTML only and valid images.
-        </div>
+        <nav class="socialmedia" aria-label="Social media links">
+          <a href="#" aria-label="Facebook">
+            <img src="images/facebook.png" alt="Facebook" />
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <img src="images/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="#" aria-label="Instagram">
+            <img src="images/instagram.png" alt="Instagram" />
+          </a>
+        </nav>
+        <p>©2026 Exciting Expeditions | Solomon Chibuzor</p>
       </footer>
     </div>
   </body>

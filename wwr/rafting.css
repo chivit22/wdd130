@@ -266,6 +266,54 @@ img {
   text-align: left;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(38, 70, 83, 0.75);
+  color: white;
+  padding: 0.8rem 1.2rem;
+}
+
+.hero article {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  position: relative;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 1rem;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 1rem 0;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
 @media (max-width: 780px) {
   .story-block {
     grid-template-columns: 1fr;
