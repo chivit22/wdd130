@@ -164,13 +164,13 @@ img {
   height: 70px;
   object-fit: cover;
   border: 1px solid var(--line);
-  background: #dfeef3;
+  background: var(--white);
 }
 
 .history-panel {
   margin-top: 18px;
-  background: #f0f0f0;
-  border: 1px solid #d3d3d3;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
   padding: 0 0 16px;
 }
 
@@ -180,7 +180,7 @@ img {
   margin: 0;
   padding: 10px 18px 12px;
   background: var(--purple);
-  color: #fff;
+  color: var(--white);
   font-size: clamp(1.8rem, 2vw, 2.4rem);
   font-weight: 700;
 }
@@ -205,7 +205,7 @@ img {
   width: 220px;
   height: 128px;
   background: var(--purple);
-  border: 1px solid #d0d0d0;
+  border: 1px solid var(--line);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,8 +221,8 @@ img {
 
 .adventure-panel {
   margin-top: 18px;
-  background: #f0f0f0;
-  border: 1px solid #d3d3d3;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
   padding: 0 0 18px;
 }
 
@@ -245,7 +245,7 @@ img {
 .caption-card {
   margin: 0;
   background: var(--gray-card);
-  border: 1px solid #d0d0d0;
+  border: 1px solid var(--line);
   overflow: hidden;
 }
 
@@ -254,7 +254,7 @@ img {
   height: 98px;
   object-fit: cover;
   display: block;
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid var(--line);
 }
 
 .caption-card figcaption {
@@ -267,7 +267,7 @@ img {
 
 .site-footer {
   background: var(--soft-purple);
-  border: 1px solid #d4d4d4;
+  border: 1px solid var(--line);
   padding: 16px 18px 18px;
   text-align: center;
   color: var(--dark);
@@ -288,7 +288,7 @@ img {
   width: 44px;
   height: 28px;
   text-decoration: none;
-  background: rgba(255,255,255,0.18);
+  background: var(--white-mid);
   border: 1px solid #c7b8d8;
   color: var(--dark);
   font-weight: 700;
@@ -333,7 +333,7 @@ img {
 
   .main-nav a {
     min-height: 42px;
-    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 1px solid var(--line);
   }
 
   .hero-article {
