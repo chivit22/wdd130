@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   --bg: #eaeaea;
   --panel: #f5f5f5;
@@ -7,10 +17,6 @@
   --muted: #3e3e3e;
   --gray-card: #e4e4e4;
   --line: #d0d0d0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 html, body {
@@ -97,12 +103,11 @@ body {
   padding: 0 18px 18px;
 }
 
-.hero-panel {
+.hero {
   position: relative;
   background: var(--panel);
-  border: 1px solid #cfcfcf;
-  padding: 0 0 12px;
-  margin-top: 0;
+  border: 1px solid var(--line);
+  overflow: hidden;
 }
 
 .hero-photo {
@@ -110,42 +115,51 @@ body {
   height: 160px;
   object-fit: cover;
   display: block;
-  border-bottom: 1px solid #d0d0d0;
 }
 
-.hero-panel h1 {
+.hero h1 {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   text-align: center;
   font-size: clamp(2.2rem, 2vw, 3.1rem);
   font-weight: 700;
   margin: 0;
-  padding: 18px 0 12px;
   color: var(--dark);
+  z-index: 1;
 }
 
-.hero-copy {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 150px;
-  gap: 18px;
-  align-items: center;
-  padding: 10px 18px 12px;
-  border-top: 1px solid #d0d0d0;
-  border-bottom: 1px solid #d0d0d0;
-  background: rgba(255,255,255,0.1);
+.hero-article {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  z-index: 1;
 }
 
-.hero-copy p {
+.hero-article p {
   margin: 0;
   font-size: 0.96rem;
   line-height: 1.5;
   color: var(--muted);
 }
 
-.mini-scene {
-  width: 130px;
-  height: 72px;
-  margin-left: auto;
+.hero-article img {
+  float: right;
+  width: 120px;
+  height: 70px;
   object-fit: cover;
-  border: 1px solid #d0d0d0;
+  margin-left: 12px;
+  border: 1px solid var(--line);
+}
+
+.hero-copy {
+  display: none;
 }
 
 .history-panel {
@@ -257,7 +271,7 @@ body {
   line-height: 1.4;
 }
 
-.social-row {
+.socialmedia {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,7 +279,7 @@ body {
   margin-top: 12px;
 }
 
-.social-row a {
+.socialmedia a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -276,10 +290,14 @@ body {
   border: 1px solid #c7b8d8;
 }
 
-.social-row img {
+.socialmedia img {
   width: 20px;
   height: 20px;
   object-fit: contain;
+}
+
+.social-row {
+  display: none;
 }
 
 @media (max-width: 900px) {
