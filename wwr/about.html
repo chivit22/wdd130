@@ -11,85 +11,95 @@
 </head>
 
 <body>
-  <header class="top-band" aria-label="Company introduction and navigation">
-    <div class="logo-box">
-      <img class="brand-logo" src="images/logo.png" alt="Exciting Expeditions logo">
-    </div>
+  <div class="site-frame">
+    <header class="top-band" aria-label="Company introduction and navigation">
+      <div class="logo-box">
+        <img class="brand-logo" src="images/logo.png" alt="Exciting Expeditions logo">
+      </div>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
 
-  <main class="page-main">
-    <div class="hero">
-      <img class="hero-photo" src="images/hero.jpg" alt="Whitewater rafting on a river">
-      <h1 id="whitewater-title">Exciting Expeditions</h1>
+    <main class="page-main">
+      <section class="hero" aria-labelledby="page-title">
+        <h1 id="page-title">White Water Rafting</h1>
 
-      <article class="hero-article" aria-labelledby="mission-heading">
-        <h2 id="mission-heading">Our Mission</h2>
-        <img class="mini-scene" src="images/employee.jpg" alt="Rafting guide smiling">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
-          mattis ac neque. Duis vulputate commodo lectus, at blandit elit tincidunt id. Sed rhoncus, tortor sed
-          eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit
-          amet elit iaculis pretium sit amet quis magna.
-        </p>
-      </article>
-    </div>
+        <article class="hero-article" aria-label="Company mission and introduction">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+            mattis ac neque. Duis vulputate commodo lectus, at blandit elit tincidunt id. Sed rhoncus, tortor sed
+            eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit
+            amet elit iaculis pretium sit amet quis magna.
+          </p>
+          <img class="mini-scene" src="images/employee.jpg" alt="Rafting guide smiling">
+        </article>
+      </section>
 
-    <section class="history-panel" aria-labelledby="history-title">
-      <h2 id="history-title">History</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
-        mattis ac neque. Duis vulputate commodo lectus, at blandit elit tincidunt id. Sed rhoncus, tortor sed
-        eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit
-        amet elit iaculis pretium sit amet quis magna.
-      </p>
-    </section>
+      <section class="history-panel" aria-labelledby="history-title">
+        <h2 id="history-title">History</h2>
+        <div class="history-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+            mattis ac neque. Duis vulputate commodo lectus, at blandit elit tincidunt id.
+          </p>
 
-    <section class="adventure-panel" aria-labelledby="adventure-title">
-      <h2 id="adventure-title">Adventure Awaits You!</h2>
+          <div class="history-graphic" aria-label="Rafting scene placeholder">
+            <img src="images/hero.jpg" alt="Rafting scene">
+          </div>
 
-      <figure class="caption-card">
-        <img src="images/adventure5.jpg" alt="Adventure on the river">
-        <figcaption>caption</figcaption>
-      </figure>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+            mattis ac neque. Duis vulputate commodo lectus, at blandit elit tincidunt id. Sed rhoncus, tortor sed
+            eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.
+          </p>
+        </div>
+      </section>
 
-      <figure class="caption-card">
-        <img src="images/adventure4.jpg" alt="Adventure on the river">
-        <figcaption>caption</figcaption>
-      </figure>
+      <section class="adventure-panel" aria-labelledby="adventure-title">
+        <h2 id="adventure-title">Adventure Awaits You</h2>
 
-      <figure class="caption-card">
-        <img src="images/adventure3.jpg" alt="Adventure on the river">
-        <figcaption>caption</figcaption>
-      </figure>
+        <div class="adventure-grid">
+          <figure class="caption-card">
+            <img src="images/adventure5.jpg" alt="Adventure on the river">
+            <figcaption>caption</figcaption>
+          </figure>
 
-      <figure class="caption-card">
-        <img src="images/rafting2.jpg" alt="Adventure on the river">
-        <figcaption>caption</figcaption>
-      </figure>
+          <figure class="caption-card">
+            <img src="images/adventure4.jpg" alt="Adventure on the river">
+            <figcaption>caption</figcaption>
+          </figure>
 
-      <figure class="caption-card">
-        <img src="images/rafting1.jpg" alt="Adventure on the river">
-        <figcaption>caption</figcaption>
-      </figure>
-    </section>
-  </main>
+          <figure class="caption-card">
+            <img src="images/adventure3.jpg" alt="Adventure on the river">
+            <figcaption>caption</figcaption>
+          </figure>
 
-  <footer class="site-footer">
-    <nav class="socialmedia" aria-label="Social media links">
-      <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
-      <a href="#" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
-      <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
-    </nav>
+          <figure class="caption-card">
+            <img src="images/rafting2.jpg" alt="Adventure on the river">
+            <figcaption>caption</figcaption>
+          </figure>
 
-    <p>© 2026 Exciting Expeditions | Solomon Chibuzor</p>
-  </footer>
+          <figure class="caption-card">
+            <img src="images/rafting1.jpg" alt="Adventure on the river">
+            <figcaption>caption</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <nav class="socialmedia" aria-label="Social media links">
+        <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#" aria-label="LinkedIn"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
+      </nav>
+    </footer>
+  </div>
 </body>
 
 </html>
