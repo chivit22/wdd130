@@ -24,7 +24,7 @@ html, body {
   padding: 0;
   background: #0f0f0f;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--dark);
+  color: #f4f4f4;
 }
 
 img {
@@ -44,6 +44,7 @@ body {
   background: var(--bg);
   border: 1px solid #d3d3d3;
   margin: 10px auto;
+  color: var(--dark);
 }
 
 .top-band {
@@ -262,6 +263,7 @@ body {
   border: 1px solid #d4d4d4;
   padding: 16px 18px 18px;
   text-align: center;
+  color: var(--dark);
 }
 
 .site-footer p {
