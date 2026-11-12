@@ -304,6 +304,13 @@ img {
   font-weight: 700;
 }
 
+.socialmedia img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
+
 .socialmedia .icon {
   font-size: 1.1rem;
   line-height: 1;
