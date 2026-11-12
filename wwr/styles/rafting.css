@@ -137,7 +137,7 @@ img {
   color: var(--dark);
 }
 
-.hero-article {
+.hero article {
   position: absolute;
   left: 18px;
   right: 18px;
@@ -153,14 +153,7 @@ img {
   border: 1px solid var(--line);
 }
 
-.hero-article p {
-  margin: 0;
-  font-size: 0.96rem;
-  line-height: 1.5;
-  color: var(--dark);
-}
-
-.hero-article img {
+.hero article img {
   float: right;
   width: 120px;
   height: 70px;
