@@ -11,69 +11,105 @@
 </head>
 
 <body>
-  <div class="page-shell">
+  <div class="site-frame">
     <header class="top-band" aria-label="Company introduction and navigation">
-      <div class="brand-block">
+      <div class="logo-box" aria-label="Exciting Expeditions logo">
         <img class="brand-logo" src="images/logo.png" alt="Exciting Expeditions logo">
-        <div class="brand-text" id="brand-name">
-          <span>EXCITING</span>
-          <span>EXPEDITIONS</span>
-        </div>
       </div>
 
-      <nav class="side-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About Us</a></li>
-          <li><a href="trips.html">Trips</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#">Home</a>
+        <a href="#" class="active">About Us</a>
+        <a href="#">Trips</a>
+        <a href="#">Contact Us</a>
       </nav>
     </header>
 
-    <main class="content">
-      <div class="hero">
-        <img src="images/hero.jpg" alt="...">
-        <h1>Exciting Expeditions</h1>
-        <article aria-labelledby="about-story-title">
-          <h2 id="about-story-title">Our Story</h2>
-          <img src="images/employee.jpg" alt="Rafting guide smiling in a life jacket" class="story-photo">
-          <p>
-            Here at Exciting Expeditions, our whitewater rafting trips are designed to provide
-            thrill-seekers with an unforgettable experience on the water. Our expert guides ensure
-            safety while you navigate through stunning landscapes and challenging rapids. Oars Up!
-          </p>
-        </article>
-      </div>
+    <main class="page-main">
+      <section class="hero-panel" aria-labelledby="whitewater-title">
+        <img class="hero-photo" src="images/hero.jpg" alt="Whitewater rafting on a river">
+        <h1 id="whitewater-title">Whitewater Rafting</h1>
 
-      <section class="history-block" aria-labelledby="history-title">
-        <h2 id="history-title">History</h2>
-        <p>
-          Exciting Expeditions was founded in 1995 by a group of adventure enthusiasts who wanted
-          to share their love for the great outdoors. Starting with just a handful of rafts and a
-          passion for exploration, the company has grown into a leading provider of whitewater
-          rafting experiences.
-        </p>
+        <div class="hero-copy">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+            mattis ac neque. Duis vulputate commodo lectus, at blandit elit tincidunt id. Sed rhoncus, tortor sed
+            eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit
+            amet elit iaculis pretium sit amet quis magna.
+          </p>
+
+          <img class="mini-scene" src="images/employee.jpg" alt="Rafting guide smiling">
+        </div>
       </section>
 
-      <section class="cta-block" aria-labelledby="adventure-title">
-        <h2 id="adventure-title">Adventure Awaits You!</h2>
+      <section class="history-panel" aria-labelledby="history-title">
+        <h2 id="history-title">History</h2>
+
+        <div class="history-content">
+          <div class="history-copy">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+              mattis ac neque. Duis vulputate commodo lectus, at blandit elit tincidunt id. Sed rhoncus, tortor sed
+              eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit
+              amet elit iaculis pretium sit amet quis magna.
+            </p>
+          </div>
+
+          <div class="history-graphic">
+            <img src="images/adventure3.jpg" alt="Rafting team on the river">
+          </div>
+
+          <div class="history-copy right-copy">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec,
+              mattis ac neque. Duis vulputate commodo lectus, at blandit elit tincidunt id. Sed rhoncus, tortor sed
+              eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit
+              amet elit iaculis pretium sit amet quis magna.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="adventure-panel" aria-labelledby="adventure-title">
+        <h2 id="adventure-title">Adventure Awaits You</h2>
+
+        <div class="adventure-grid" aria-label="Adventure images">
+          <figure class="caption-card">
+            <img src="images/adventure5.jpg" alt="Adventure on the river">
+            <figcaption>caption</figcaption>
+          </figure>
+
+          <figure class="caption-card">
+            <img src="images/adventure4.jpg" alt="Adventure on the river">
+            <figcaption>caption</figcaption>
+          </figure>
+
+          <figure class="caption-card">
+            <img src="images/adventure3.jpg" alt="Adventure on the river">
+            <figcaption>caption</figcaption>
+          </figure>
+
+          <figure class="caption-card">
+            <img src="images/rafting2.jpg" alt="Adventure on the river">
+            <figcaption>caption</figcaption>
+          </figure>
+
+          <figure class="caption-card">
+            <img src="images/rafting1.jpg" alt="Adventure on the river">
+            <figcaption>caption</figcaption>
+          </figure>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <nav class="socialmedia" aria-label="Social media links">
-        <a href="#" aria-label="Facebook">
-          <img src="images/facebook.png" alt="Facebook">
-        </a>
-        <a href="#" aria-label="LinkedIn">
-          <img src="images/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="#" aria-label="Instagram">
-          <img src="images/instagram.png" alt="Instagram">
-        </a>
-      </nav>
-      <p>©2026 Exciting Expeditions | Solomon Chibuzor</p>
+    <footer class="site-footer">
+      <p>Footer Content including Social Media Icons/Links</p>
+
+      <div class="social-row" aria-label="Social media links">
+        <a href="#" aria-label="Facebook"><img src="images/Facebook.png" alt="Facebook"></a>
+        <a href="#" aria-label="X"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
+      </div>
     </footer>
   </div>
 </body>
