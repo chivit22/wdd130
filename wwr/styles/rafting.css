@@ -22,6 +22,9 @@
   --white-soft: rgba(255, 255, 255, 0.08);
   --white-faint: rgba(255, 255, 255, 0.1);
   --white-mid: rgba(255, 255, 255, 0.18);
+  --shadow-soft: #0000000d;
+  --shadow-strong: #00000014;
+  --icon-bg: #ffffff40;
 }
 
 html, body {
@@ -50,7 +53,7 @@ img {
   border: 1px solid var(--line-strong);
   margin: 10px auto;
   color: var(--dark);
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.02);
+  box-shadow: inset 0 0 0 1px #00000005;
 }
 
 .top-band {
@@ -265,12 +268,33 @@ img {
   text-transform: lowercase;
 }
 
-.site-footer {
+.site-footer,
+.contact-footer {
   background: var(--soft-purple);
   border: 1px solid var(--line);
   padding: 16px 18px 18px;
   text-align: center;
   color: var(--dark);
+}
+
+.contact-footer {
+  margin-top: 18px;
+}
+
+.contact-footer p {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+}
+
+.contact-footer .socialmedia {
+  justify-content: center;
+}
+
+.contact-footer .socialmedia a {
+  width: 42px;
+  height: 36px;
+  border: 1px solid var(--line);
+  background: var(--icon-bg);
 }
 
 .socialmedia {
@@ -304,6 +328,72 @@ img {
 .socialmedia .icon {
   font-size: 1.1rem;
   line-height: 1;
+}
+
+.employee-card {
+  background: var(--gray-card);
+  border: 1px solid var(--line);
+  padding: 18px 12px 16px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.employee-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px var(--shadow-strong);
+}
+
+.employee-card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(74, 47, 116, 0.2);
+  margin-top: 14px;
+  box-shadow: inset 0 0 0 1px #ffffff66;
+}
+
+.employee-icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: #d4d4d4;
+  position: relative;
+}
+
+.employee-icon::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #efefef;
+  left: 50%;
+  top: 14px;
+  transform: translateX(-50%);
+}
+
+.employee-icon::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 18px;
+  border-radius: 18px 18px 10px 10px;
+  background: #efefef;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+}
+
+.employee-card span {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 1rem;
+  color: var(--dark);
 }
 
 .contact-panel {
@@ -370,7 +460,7 @@ img {
 
 .contact-form {
   display: grid;
-  gap: 10px;
+  gap: 12px;
   background: var(--gray-card);
   border: 1px solid var(--line);
   padding: 16px;
@@ -384,33 +474,29 @@ img {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px 12px;
+  min-height: 38px;
   border: 1px solid var(--line);
-  background: var(--white);
+  background: #f5f5f5;
+  padding: 8px 12px;
   font: inherit;
   color: var(--dark);
 }
 
 .contact-form textarea {
+  min-height: 90px;
   resize: vertical;
-  min-height: 120px;
 }
 
 .contact-form button {
-  margin-top: 8px;
-  border: none;
-  background: var(--purple);
-  color: var(--white);
-  padding: 12px 18px;
-  font-size: 1rem;
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  background: #f3f3f3;
+  color: var(--dark);
+  font-size: 1.05rem;
   font-weight: 700;
   cursor: pointer;
-}
-
-.wireframe-contact {
-  background: transparent;
-  border: none;
-  padding: 0;
+  margin-top: 8px;
 }
 
 .company-info {
@@ -462,15 +548,6 @@ img {
   display: none;
 }
 
-.map-pin {
-  display: none;
-}
-
-.contact-form {
-  display: grid;
-  gap: 12px;
-}
-
 .field-row {
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -481,22 +558,6 @@ img {
 .field-row label {
   font-size: 1rem;
   color: var(--dark);
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  min-height: 38px;
-  border: 1px solid var(--line);
-  background: #f5f5f5;
-  padding: 8px 12px;
-  font: inherit;
-  color: var(--dark);
-}
-
-.contact-form textarea {
-  min-height: 90px;
-  resize: vertical;
 }
 
 .radio-group {
@@ -529,17 +590,6 @@ img {
   margin-top: 4px;
 }
 
-.contact-form button {
-  width: 100%;
-  min-height: 44px;
-  border: 1px solid var(--line);
-  background: #f3f3f3;
-  color: var(--dark);
-  font-size: 1.05rem;
-  font-weight: 700;
-  cursor: pointer;
-}
-
 .team-panel {
   margin-top: 20px;
   padding: 18px 18px 22px;
@@ -558,96 +608,6 @@ img {
   display: grid;
   grid-template-columns: repeat(3, minmax(140px, 1fr));
   gap: 18px;
-}
-
-.employee-card {
-  background: var(--gray-card);
-  border: 1px solid var(--line);
-  padding: 18px 12px 16px;
-  text-align: center;
-  border-radius: 16px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.employee-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
-}
-
-.employee-card img {
-  display: block;
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 1px solid rgba(74, 47, 116, 0.2);
-  margin-top: 14px;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4);
-}
-
-.employee-icon {
-  width: 54px;
-  height: 54px;
-  margin: 0 auto 14px;
-  border-radius: 50%;
-  background: #d4d4d4;
-  position: relative;
-}
-
-.employee-icon::before {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #efefef;
-  left: 50%;
-  top: 14px;
-  transform: translateX(-50%);
-}
-
-.employee-icon::after {
-  content: "";
-  position: absolute;
-  width: 28px;
-  height: 18px;
-  border-radius: 18px 18px 10px 10px;
-  background: #efefef;
-  left: 50%;
-  bottom: 12px;
-  transform: translateX(-50%);
-}
-
-.employee-card span {
-  display: inline-block;
-  margin-top: 6px;
-  font-size: 1rem;
-  color: var(--dark);
-}
-
-.contact-footer {
-  margin-top: 18px;
-  background: var(--soft-purple);
-  border: 1px solid var(--line);
-  padding: 16px 18px 18px;
-  text-align: center;
-}
-
-.contact-footer p {
-  margin: 0 0 12px;
-  font-size: 1.05rem;
-}
-
-.contact-footer .socialmedia {
-  justify-content: center;
-}
-
-.contact-footer .socialmedia a {
-  width: 42px;
-  height: 36px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.25);
 }
 
 @media (max-width: 900px) {
